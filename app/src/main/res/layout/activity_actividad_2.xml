@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.android.curso.justa_java_miguel.Actividad_2">
 
     <TextView
@@ -13,11 +14,57 @@
         android:text="Actividad Dos"
         android:textSize="50sp"
         android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/ivImagenActividad2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/cara"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+    <RadioButton
+        android:id="@+id/rbAndroid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android" />
+
+    <RadioButton
+        android:id="@+id/rbIos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ios" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:onClick="cambiarImagen"
+        android:id="@+id/btnCambiarImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cambiar imagen"
+        android:background="#5c6bc0"
+        android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/tvRestablecer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restablecer imagen"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:onClick="restablecerImagen"
 
         />
 
 </LinearLayout>
-
-
-
 

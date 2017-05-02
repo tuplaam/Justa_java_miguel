@@ -13,6 +13,7 @@ public class Actividad_2 extends AppCompatActivity {
 
     private Button btnCambiarImagen;
 
+
     private ImageView ivImagenActividad2;
     private RadioButton rbAndroid;
     private RadioButton rbIos;
